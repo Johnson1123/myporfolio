@@ -1,54 +1,31 @@
-import React from "react";
-import styled from 'styled-components'
-import Footer from "./component/Footer";
-import Intro from "./component/Intro";
-import Navbar from "./component/Navbar";
-import Profile from "./component/Profile";
-import Recentwork from "./component/Recentwork";
-import Testimonial from "./component/Testimonial";
-import Works from "./component/Works";
+import React from 'react' 
+import Home from './pages/Home.jsx'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Contact from './pages/Contact.jsx';
 
-const Container = styled.div`
-  height: 100vh;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media only screen and (max-width: 900px) {
-    height: auto;
-    min-height: 50vh;
-  }
-  @media only screen and (max-width: 767px) {
-    min-height: 100vh;
-    height: auto;
-  }
-`
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "contact",
+    element: <Contact />,
+  },
+  {
+    path: "project",
+    element: <div>Project</div>,
+  },
+]);
 
 function App() {
   return (
-    <>
-      <Container>
-        <Navbar />
-        <Intro />
-      </Container>
-      <Container>
-        <Profile />
-      </Container> 
-      <Container>
-        <Works />
-      </Container> 
-      <Container>
-        <Recentwork />
-      </Container>
-      <Container>
-        <Testimonial />
-      </Container>
-      <Container>
-        <Footer />
-      </Container>
-    </>
-  );
+    <RouterProvider router={router} />
+  )
 }
 
-export default App;
+export default App

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../asset/favicon.png'
-
 const Container = styled.div`
     width: 85%;
     height: 100px;
@@ -54,7 +53,7 @@ const Navlist = styled.button`
     color: #d3d3d3;
   }
 `
-const Sayhello = styled.button`
+const Sayhello = styled.a`
   background: transparent;
   padding: .4rem 1rem;
   font-size: 18px;
@@ -86,7 +85,7 @@ export default function Navbar() {
             </Nav>
           </Left>
           <Right>
-            <Sayhello>Say Hello</Sayhello>
+            <Sayhello href='/contact'>Say Hello</Sayhello>
           </Right>
         </Wrapper>
     </Container>

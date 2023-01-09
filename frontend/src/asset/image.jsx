@@ -8,5 +8,6 @@ import peter from './peter.jpg'
 import jane from './Jane.jpg'
 import logo from './favicon.png'
 import StyledLogo from './logo.png'
+import myimg from './Johnson__onifade.jpeg'
 
-export default { blog, ecommerce, food, furnitures, fabrics, groceries, peter, jane, logo, StyledLogo }
+export default { blog, ecommerce, food, furnitures, fabrics, groceries, peter, jane, logo, StyledLogo, myimg }
