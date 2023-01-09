@@ -7,6 +7,9 @@ const Container = styled.div`
     height: 100px;
     padding: 1rem 1rem;
     overflow: hidden;
+    @media only screen and (max-width: 767px) {
+      width: 95%;
+    }
 `
 const Wrapper = styled.div`
     padding: 10px 1rem;
@@ -64,6 +67,9 @@ const Sayhello = styled.button`
   &:hover{
     background: #3C79F5;
     color: #fff;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: .5rem 1rem;
   }
 `
 export default function Navbar() {

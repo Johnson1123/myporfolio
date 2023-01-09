@@ -6,11 +6,15 @@ import { FcAcceptDatabase } from 'react-icons/fc'
 
 const Container = styled.div`
     width: 100%;
-    height: 100px;
+    height: 100%;
     padding: 1rem 1rem;
-    overflow: hidden;
     display: flex;
+    position: relative;
     justify-content: center;
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        min-height: 270vh;
+    }
 `
 const Wrapper = styled.div`
     padding: 3rem 1rem;
@@ -22,7 +26,7 @@ const Wrapper = styled.div`
     transform: translateX(-50%);
     top: -50px;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -30,6 +34,10 @@ const Wrapper = styled.div`
         width: 95%;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 95%;
+        height: auto;
     }
 `
 const WorkBox = styled.div`
@@ -42,6 +50,10 @@ const WorkBox = styled.div`
     border-radius: 10px;
     @media only screen and (max-width: 900px) {
         width: 33%;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+        margin-top: 10px;
     }
 `
 const IconBox = styled.div`
@@ -62,6 +74,11 @@ const IconBox = styled.div`
             color: #f3f3f3;
         }
     }
+    @media only screen and (max-width: 767px) {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
 `
 const HeaderText = styled.h2`
     line-height: 2;
@@ -69,6 +86,9 @@ const HeaderText = styled.h2`
     font-size: 30px;
     @media only screen and (max-width: 900px) {
         font-size: 22px;
+    }
+    @media only screen and (max-width: 767px) {
+        margin-top: 10px;
     }
 `
 const WorkText = styled.p`
@@ -79,6 +99,9 @@ const WorkText = styled.p`
         font-size: 16px;
         min-height: 100px;
     }
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+    }
 `
 const WorkLanguageText = styled.p`
     line-height: 1.3;
@@ -86,6 +109,9 @@ const WorkLanguageText = styled.p`
     font-size: 18px;
     color: #6C00FF;
     font-weight: 600;
+    @media only screen and (max-width: 767px) {
+        margin-top: 10px;
+    }
 `
 const WorkLanguage = styled.p`
     line-height: 1.3;

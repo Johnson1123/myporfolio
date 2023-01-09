@@ -10,14 +10,18 @@ import Works from "./component/Works";
 
 const Container = styled.div`
   height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   @media only screen and (max-width: 900px) {
     height: auto;
     min-height: 50vh;
+  }
+  @media only screen and (max-width: 767px) {
+    min-height: 100vh;
+    height: auto;
   }
 `
 

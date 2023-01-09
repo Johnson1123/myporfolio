@@ -14,7 +14,14 @@ const Container = styled.div`
     background: #6C00FF;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
+    @media only screen and (max-width: 900px) {
+        height: 60vh;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 100vh;
+    }
 `
 const Wrapper = styled.div`
     width: 85%;
@@ -22,6 +29,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    he
 `
 const ProjectBox = styled.div`
     width: 85%;
@@ -35,6 +43,9 @@ const ProjectBox = styled.div`
     align-items: center;
     border-radius: 5px;
     padding: 3rem 1rem;
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 `
 const HeaderText = styled.p`
     font-size: 20px;
@@ -42,7 +53,7 @@ const HeaderText = styled.p`
     letter-spacing: 1.5px;
     font-weight: 600;
     @media only screen and (max-width: 900px) {
-        font-size: 18px;
+        font-size: 20px;
     }
 `
 const InteText = styled.p`
@@ -51,8 +62,13 @@ const InteText = styled.p`
     width: 40%;
     letter-spacing: 1.5px;
     font-weight: 600;
+    text-align: center;
     @media only screen and (max-width: 900px) {
         font-size: 16px;
+    }
+    @media only screen and (max-width: 900px) {
+        width: 90%;
+        margin-top: 20px;
     }
 `
 const TextButton = styled.a`
@@ -72,6 +88,9 @@ const TextButton = styled.a`
     @media only screen and (max-width: 900px) {
         font-size: 18px;
         padding: .5rem 1.1rem;
+    }
+    @media only screen and (max-width: 767px) {
+        margin-top: 20px;
     }
 `
 const FooImgCon = styled.div`
@@ -100,6 +119,9 @@ const FooText = styled.p`
     @media only screen and (max-width: 900px) {
         font-size: 18px;
         margin-top: 80px;
+    }
+    @media only screen and (max-width: 767px) {
+        text-align: center;
     }
 `
 const SocialBox = styled.div`
@@ -133,6 +155,13 @@ const SocialLink = styled.a`
         background: #fff;
         svg{
             color: #6C00FF;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        height: 30px;
+        width: 30px;
+        svg{
+            font-size: 18px;
         }
     }
 `

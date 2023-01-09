@@ -10,17 +10,27 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     @media only screen and (max-width: 900px) {
-        height: 120vh;
+        height: auto;
         align-items: center;
     }
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        align-items: center;
+    }
+    
 `
 const Wrapper = styled.div`
     width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media only screen and (max-width: 900px) {
         margin-top: 200px;
+    }
+    @media only screen and (max-width: 767px) {
+       height: auto;
+       margin-top: 20px;
     }
 `
 const HeaderText = styled.h2`
@@ -51,6 +61,11 @@ const WorkContainer = styled.div`
     @media only screen and (max-width: 900px) {
         padding: 20px 0;
     }
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        justify-content: center;
+        gap: 10px;
+    }
 `
 const WorkBox = styled.div`
     width: 32%;
@@ -64,7 +79,10 @@ const WorkBox = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        width: 48%
+        width: 45%
+    }
+    @media only screen and (max-width: 767px) {
+        width: 90%
     }
 `
 const WorkImg = styled.img`

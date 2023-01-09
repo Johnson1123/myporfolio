@@ -11,18 +11,28 @@ const Container = styled.div`
     @media only screen and (max-width: 900px) {
         height: 55vh;
     }
+    @media only screen and (max-width: 767px) {
+        min-height: 100vh;
+    }
 `
 const Wrapper = styled.div`
     width: 85%;
+    height: 100%;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 `
 const HeaderText = styled.h2`
     font-size: 24px;
     color: #fff;
     letter-spacing: 1.5px;
+    @media only screen and (max-width: 767px) {
+        margin-top: 50px;
+        font-size: 20px;
+    }
 `
 
 const ProfileText = styled.p`
@@ -35,6 +45,10 @@ const ProfileText = styled.p`
     @media only screen and (max-width: 900px) {
         font-size: 18px;
         line-height: 1.5;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 100vh;
+        width: 90%;
     }
 `
 

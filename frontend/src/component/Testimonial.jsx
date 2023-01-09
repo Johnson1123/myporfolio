@@ -7,6 +7,9 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    @media only screen and (max-width: 767px) {
+        height: 100vh;
+    }
     @media only screen and (max-width: 900px) {
         height: 75vh;
     }
@@ -18,11 +21,21 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 900px) {
+        margin-top: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 95%;
+        height: 100%;
+    }
 `
 const HeaderText = styled.h2`
     line-height: 2;
     margin-top: 20px;
     font-size: 30px;
+    @media only screen and (max-width: 767px) {
+        margin-top: 10px;
+    }
 `
 const TestText = styled.p`
     font-size: 22px;
@@ -32,6 +45,11 @@ const TestText = styled.p`
     @media only screen and (max-width: 900px) {
         font-size: 20px;
     }
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+        text-align: center;
+    }
+
 `
 const TestCon = styled.div`
     padding: 1rem;
@@ -65,6 +83,10 @@ const TestsText = styled.p`
         width: 70%;
         font-size: 18px;
     }
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin-top: 20px;
+    }
 `
 const TestAuthor = styled.div`
     margin-top: 30px;
@@ -77,12 +99,19 @@ const AuthorName =styled.h3`
     margin-top: 20px;
     font-size: 30px;
     font-weight: 400;
+    @media only screen and (max-width: 767px) {
+        font-size: 22px;
+        margin-top: 10px;
+    }
 `
 const AuthorWork =styled.p`
     line-height: 2;
     margin-top: 0px;
     font-size: 20px;
     font-weight: 400;
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+    }
 `
 function Testimonial() {
   return (

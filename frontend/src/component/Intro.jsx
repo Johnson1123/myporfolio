@@ -4,7 +4,7 @@ import myimg from '../asset/Johnson__onifade.jpeg'
 
 const Container = styled.div`
     width: 85%;
-    min-height: calc( 100vh - 100px );
+    height: calc(100vh - 100px);
     padding: 2rem 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,12 @@ const Container = styled.div`
     align-items: center;
     @media only screen and (max-width: 900px) {
         justify-content: flex-start;
-        min-height: calc( 50vh - 100px );
+        height: calc(50vh - 100px);
+        min-height: calc( 50vh + 100px );
+    }
+    @media only screen and (max-width: 767px) {
+        min-height: 50vh;
+        width: 95%;
     }
 `
 const WhatIDov = styled.h1`
@@ -24,11 +29,22 @@ const WhatIDov = styled.h1`
         font-weight: 800;
         margin-top: 100px;
     }
+    @media only screen and (max-width: 767px) {
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 800;
+        margin-top: 50px;
+        line-height: 1.5;
+    }
 `
 const WhatIWrite = styled.p`
     font-size: 20px;
     @media only screen and (max-width: 900px) {
         font-size: 18px;
+    }
+    @media only screen and (max-width: 900px) {
+        text-align: left;
+        line-height: 1.3;
     }
 `
 const MyImgCon = styled.div`
@@ -42,6 +58,11 @@ const MyImgCon = styled.div`
         height: auto;
         margin-top: 100px;
     }
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        margin-top: 50px;
+    }
+
 `
 const MyImgBox = styled.div`
     width: 230px;
