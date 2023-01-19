@@ -55,7 +55,7 @@ const ProfileText = styled.p`
 
 const Profile = () => {
   return (
-    <Container>
+    <Container id='profile'>
         <Wrapper>
             <HeaderText>Hi, I'm Johnson. Nice to Meet you</HeaderText>
             <ProfileText>

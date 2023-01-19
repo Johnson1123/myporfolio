@@ -45,7 +45,7 @@ const Nav = styled.ul`
     display: none;
   }
 `
-const Navlist = styled.button`
+const Navlist = styled.a`
   border: none;
   background: none;
   margin-right: 1rem;
@@ -83,10 +83,10 @@ export default function Navbar() {
           <Left>
             <LinkImg href='/'><Logo src={logo} /></LinkImg>
             <Nav>
-              <Navlist>Author</Navlist>
-              <Navlist>Features</Navlist>
-              <Navlist>Services</Navlist>
-              <Navlist>Pricing</Navlist>
+              <Navlist href='#profile'>Author</Navlist>
+              <Navlist href='#skills'>Skills</Navlist>
+              <Navlist href='#Work'>Works</Navlist>
+              <Navlist href='#testimonial'>Testimonial</Navlist>
             </Nav>
           </Left>
           <Right>

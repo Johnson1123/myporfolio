@@ -6,7 +6,7 @@ import { TiSocialFacebook } from 'react-icons/ti'
 import { FiTwitter } from 'react-icons/fi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { FiGithub } from 'react-icons/fi'
-import { HiOutlineMail } from 'react-icons/hi'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const Container = styled.div`
     height: 100%;
@@ -207,16 +207,16 @@ function Footer() {
         <ProjectBox>
             <HeaderText>Start a Project</HeaderText>
             <InteText>Do you need right partner to work with, let's Chat </InteText>
-            <TextButton><HiUserGroup /> let do this!</TextButton>
+            <TextButton href='/project'><HiUserGroup /> let do this!</TextButton>
         </ProjectBox>
         <FooImgCon><FooImg src={ images.logo } /></FooImgCon>
         <FooText>Clean, Maintainable and high Functional Code</FooText>
         <SocialBox>
-            <SocialLink href=''><FiTwitter /></SocialLink>
+            <SocialLink href='https://twitter.com/Dammyjohn8658'><FiTwitter /></SocialLink>
             <SocialLink href=''><AiOutlineInstagram /></SocialLink>
-            <SocialLink href=''><FiGithub /></SocialLink>
-            <SocialLink href=''><TiSocialFacebook /></SocialLink>
-            <SocialLink href=''><HiOutlineMail /></SocialLink>
+            <SocialLink href='https://github.com/Johnson1123'><FiGithub /></SocialLink>
+            <SocialLink href='https://web.facebook.com/johnson.onifade.3701'><TiSocialFacebook /></SocialLink>
+            <SocialLink href='https://www.linkedin.com/in/johnson-onifade-558012155/'><FaLinkedinIn /></SocialLink>
         </SocialBox>
         <Copyright>Johnson &copy; {time}</Copyright>
         <StyledLogo>Create with <LinkImg href='https://styled-components.com/'><StyledImg src={images.StyledLogo}/></LinkImg></StyledLogo>

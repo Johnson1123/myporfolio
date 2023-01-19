@@ -125,7 +125,7 @@ const WorkLanguage = styled.p`
 
 const Works = () => {
   return (
-    <Container>
+    <Container id='skills'>
         <Wrapper>          
             <WorkBox>
                 <IconBox><FaReact /></IconBox>
