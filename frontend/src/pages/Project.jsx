@@ -53,9 +53,9 @@ const MyImg = styled.img`
     transform: translate(-50%, -50%);
     border-radius: 50%;
 `
-const ThankYou = styled.p`
+const WorkText = styled.p`
     font-size: 24px;
-    margin: 20px 0;
+    margin: 30px 0;
     margin-top: 50px;
     text-align: center;
     line-height: 1.3;
@@ -66,11 +66,26 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
 `
+const InputDiv = styled.div`
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+`
 const InputCon = styled.form`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 25px;
+    @media only screen and (min-width: 900px) {
+        width: 48%;
+      }
+`
+const TextAreaCon = styled.form`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
 `
 const Label = styled.label`
     font-size: 18px;
@@ -81,10 +96,15 @@ const Input = styled.input`
     height: 55px;
     border-radius: 5px;
     outline: none;
+    position: relative;
     border: 1px solid #d3d3d3;
     &:focus{
         padding: 15px;
     }
+`
+const Datalist = styled.datalist`
+    position: absolute;
+
 `
 const TextArea = styled.textarea`
     width: 100%;
@@ -112,7 +132,7 @@ const FormBtn = styled.button`
 `
 
 
-function Contact() {
+function Project() {
   return (
     <Container>
         <Wrapper>
@@ -120,20 +140,46 @@ function Contact() {
             <MyImgCon>
                 <MyImgBox><MyImg src={images.myimg} /></MyImgBox>
             </MyImgCon>
-            <ThankYou>Thanks for taking the time to reach out. How can I help you today?</ThankYou>
+            <WorkText>I’m excited to learn about your project. Ready to get started?</WorkText>
             <Form>
-                <InputCon>
-                    <Label>Name</Label>
-                    <Input type='text' autoFocus></Input>
-                </InputCon>
-                <InputCon>
-                    <Label>Email</Label>
-                    <Input type='text'></Input>
-                </InputCon>
-                <InputCon>
+                <InputDiv>
+                    <InputCon>
+                        <Label>Name</Label>
+                        <Input type='text' autoFocus></Input>
+                    </InputCon>
+                    <InputCon>
+                        <Label>Email</Label>
+                        <Input type='email' autoFocus></Input>
+                    </InputCon>
+                </InputDiv>
+                <InputDiv>
+                    <InputCon>
+                        <Label>Type of project</Label>
+                        <Input list="browsers" name="browser" id="browser" />
+                        <Datalist id="browsers" >
+                            <option value="FIgma, Xd convertion" />
+                            <option value="React, Redux & Redux Toolkit" />
+                            <option value="Responsive design" />
+                            <option value="Web Application" />
+                            <option value="Mobile Application" />
+                        </Datalist>
+                    </InputCon>
+                    <InputCon>
+                        <Label>Budget</Label>
+                        <Input list="budget" name="budget" id="budgets" />
+                        <Datalist id="budget" >
+                            <option value="$1000 or Less" />
+                            <option value="$5000" />
+                            <option value="$10000" />
+                            <option value="$15000 or More" />
+                        </Datalist>
+                    </InputCon>
+                </InputDiv>
+                
+                <TextAreaCon>
                     <Label>Massege</Label>
                     <TextArea rows='10'></TextArea>
-                </InputCon>
+                </TextAreaCon>
             </Form>
             <FormBtn>Submit</FormBtn>
         </Wrapper>
@@ -141,4 +187,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Project;

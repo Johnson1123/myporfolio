@@ -30,6 +30,10 @@ const Right = styled.div`
   display: flex;
   align-items: center;
 `
+const LinkImg = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+`
 const Logo = styled.img`
   height: 40px;
 `
@@ -61,6 +65,7 @@ const Sayhello = styled.a`
   border: 2px solid #3C79F5;
   margin-left: auto;
   margin-top: .4rem;
+  text-decoration: none;
   color: #3C79F5;
   cursor: pointer;
   &:hover{
@@ -76,7 +81,7 @@ export default function Navbar() {
     <Container>
         <Wrapper>
           <Left>
-            <Logo src={logo} />
+            <LinkImg href='/'><Logo src={logo} /></LinkImg>
             <Nav>
               <Navlist>Author</Navlist>
               <Navlist>Features</Navlist>

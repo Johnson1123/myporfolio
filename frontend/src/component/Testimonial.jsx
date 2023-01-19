@@ -124,7 +124,7 @@ function Testimonial() {
                     <TestImg src={ images.peter }/>
                 </TestImgCon>
                 <TestsText>
-                    “Matt's a clear communicator with the tenacity and confidence to really dig in to tricky 
+                    JTeam's are clear communicators with the tenacity and confidence to really dig in to tricky 
                     design scenarios and the collaborative friction that's needed to produce excellent work.”
                 </TestsText>
                 <TestAuthor>

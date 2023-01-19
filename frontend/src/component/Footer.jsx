@@ -176,7 +176,11 @@ const Copyright = styled.p`
         margin-top: 50px;
     }
 `
-const StyledLogo = styled.p`
+const LinkImg = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+`
+const StyledLogo = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +219,7 @@ function Footer() {
             <SocialLink href=''><HiOutlineMail /></SocialLink>
         </SocialBox>
         <Copyright>Johnson &copy; {time}</Copyright>
-        <StyledLogo>Create with <StyledImg src={images.StyledLogo}/></StyledLogo>
+        <StyledLogo>Create with <LinkImg href='https://styled-components.com/'><StyledImg src={images.StyledLogo}/></LinkImg></StyledLogo>
     </Wrapper>
    </Container>
   )

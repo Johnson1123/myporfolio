@@ -68,16 +68,14 @@ const MyImgBox = styled.div`
     width: 230px;
     height: 230px;
     background: #2DCDDF;
-    position: relative;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 const MyImg = styled.img`
-    width: 220px;
-    height: 220px;
-    position: absolute;
-    z-index: 1;
-    left: 5px;
-    top: -5px;
+    width: 218px;
+    height: 218px;
     border-radius: 50%;
 `
 

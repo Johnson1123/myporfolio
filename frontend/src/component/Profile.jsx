@@ -38,13 +38,14 @@ const HeaderText = styled.h2`
 const ProfileText = styled.p`
     margin-top: 40px;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     color: #fff;
     width: 70%;
     line-height: 1.3;
     @media only screen and (max-width: 900px) {
         font-size: 18px;
         line-height: 1.5;
+        text-align: center;
     }
     @media only screen and (max-width: 767px) {
         height: 100vh;
@@ -56,7 +57,7 @@ const Profile = () => {
   return (
     <Container>
         <Wrapper>
-            <HeaderText>Hi, I'm Johnson. I am Glad to Meet you</HeaderText>
+            <HeaderText>Hi, I'm Johnson. Nice to Meet you</HeaderText>
             <ProfileText>
                 I am a motivated Front-end developer with over two year of experience in web development. 
                 Excellent reputation for resolving problems and awesome designs. Eager to contribute to team
