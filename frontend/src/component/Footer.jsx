@@ -212,11 +212,11 @@ function Footer() {
         <FooImgCon><FooImg src={ images.logo } /></FooImgCon>
         <FooText>Clean, Maintainable and high Functional Code</FooText>
         <SocialBox>
-            <SocialLink href='https://twitter.com/Dammyjohn8658'><FiTwitter /></SocialLink>
+            <SocialLink href='https://twitter.com/Dammyjohn8658' target='_blank'><FiTwitter /></SocialLink>
             <SocialLink href=''><AiOutlineInstagram /></SocialLink>
-            <SocialLink href='https://github.com/Johnson1123'><FiGithub /></SocialLink>
-            <SocialLink href='https://web.facebook.com/johnson.onifade.3701'><TiSocialFacebook /></SocialLink>
-            <SocialLink href='https://www.linkedin.com/in/johnson-onifade-558012155/'><FaLinkedinIn /></SocialLink>
+            <SocialLink href='https://github.com/Johnson1123' target='_blank'><FiGithub /></SocialLink>
+            <SocialLink href='https://web.facebook.com/johnson.onifade.3701' target='_blank'><TiSocialFacebook /></SocialLink>
+            <SocialLink href='https://www.linkedin.com/in/johnson-onifade-558012155/' target='_blank'><FaLinkedinIn /></SocialLink>
         </SocialBox>
         <Copyright>Johnson &copy; {time}</Copyright>
         <StyledLogo>Create with <LinkImg href='https://styled-components.com/'><StyledImg src={images.StyledLogo}/></LinkImg></StyledLogo>

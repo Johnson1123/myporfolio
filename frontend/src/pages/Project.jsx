@@ -168,10 +168,10 @@ function Project() {
                         <Label>Budget</Label>
                         <Input list="budget" name="budget" id="budgets" />
                         <Datalist id="budget" >
-                            <option value="$1000 or Less" />
-                            <option value="$5000" />
-                            <option value="$10000" />
-                            <option value="$15000 or More" />
+                            <option value="$1,000 or Less" />
+                            <option value="$5.000" />
+                            <option value="$10,000" />
+                            <option value="$15,000 or More" />
                         </Datalist>
                     </InputCon>
                 </InputDiv>
