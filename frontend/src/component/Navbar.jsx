@@ -83,7 +83,7 @@ export default function Navbar() {
           <Left>
             <LinkImg href='/'><Logo src={logo} /></LinkImg>
             <Nav>
-              <Navlist href='#profile'>Author</Navlist>
+              <Navlist href='#profile'>Authors</Navlist>
               <Navlist href='#skills'>Skills</Navlist>
               <Navlist href='#Work'>Works</Navlist>
               <Navlist href='#testimonial'>Testimonial</Navlist>

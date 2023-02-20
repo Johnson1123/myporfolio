@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import { images } from '../asset'
+import { client, urlFor } from '../client'
 
 const Container = styled.div`
     height: 100%;
@@ -114,6 +115,18 @@ const AuthorWork =styled.p`
     }
 `
 function Testimonial() {
+
+    const [testimonial, setTestimonial] = useState([]);
+
+    const [currentIndex, setCurrentIndex] = useState(1);
+    
+    useEffect(() => {
+        const query = "*[_type == 'testimonial']";
+    
+        client.fetch(query)
+          .then((data) => setTestimonial(data))
+      }, []);
+      console.log(testimonial[0]);
   return (
     <Container id='testimonial'>
         <Wrapper>
@@ -121,15 +134,12 @@ function Testimonial() {
             <TestText>People I've worked with have said some nice things...</TestText>
             <TestCon>
                 <TestImgCon>
-                    <TestImg src={ images.peter }/>
+                    {/* <TestImg src={urlFor(testimonial[currentIndex].Imageurl)}/> */}
                 </TestImgCon>
-                <TestsText>
-                    JTeam's are clear communicators with the tenacity and confidence to really dig in to tricky 
-                    design scenarios and the collaborative friction that's needed to produce excellent work.”
-                </TestsText>
+                {/* <TestsText>{testimonial[currentIndex].comment}</TestsText> */}
                 <TestAuthor>
-                    <AuthorName>Elon Peter</AuthorName>
-                    <AuthorWork>Manager, The West Enterprises, Inc.</AuthorWork>
+                    {/* <AuthorName>{testimonial[currentIndex].name}</AuthorName> */}
+                    {/* <AuthorWork>{`${testimonial[currentIndex].level}, ${testimonial[currentIndex].level}}`}</AuthorWork> */}
                 </TestAuthor>
             </TestCon>
         </Wrapper>
